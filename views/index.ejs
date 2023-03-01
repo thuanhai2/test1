@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Danh sách lớp</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Danh sách lớp</h1>
+    <table border="1">
+      <tr>
+            <th>ID</th>   
+            <th>NAME</th>   
+            <th>NUMBER STUDENT</th>   
+      </tr>
+      <% lops.forEach(element => { %>
+       <tr>
+        <td><%= item.id %></td>
+        <td><%= item.name %></td>
+        <td><%= item.numberStudent %></td>
+
+       </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
